@@ -1,0 +1,55 @@
+:root {
+    --primary: rgb(255, 192, 203); /* Pink */
+    --primary-fg: rgb(0, 0, 0);
+    --secondary: rgb(135, 206, 235); /* Sky Blue */
+    --bg: rgb(247, 249, 250);
+    --text: rgb(51, 51, 51);
+    --card-bg: rgb(255, 255, 255);
+    --accent: rgb(255, 255, 0);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card {
+    border: none;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-radius: 12px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--primary-fg);
+    border: none;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: rgb(255, 153, 204);
+    color: black;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: black;
+    border: none;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(255, 192, 203, 0.25);
+}
+
+/* RTL Support */
+body[dir="rtl"] {
+    text-align: right;
+}
